@@ -43,15 +43,19 @@ constant ATLA_ELDE_YOKSA : std_logic_vector(7 downto 0) := x"28";
 
 
 type rom_type is array (0 to 127) of std_logic_vector(7 downto 0);
-constant ROM : rom_type := (
-								0 => YUKLE_A_SBT,
-								1=> x"0F",
-								2=> KAYDET_A,
-								3=> x"80",
-								4=> ATLA,
-								5=> x"00",
-								others => x"00"
-							);
+	constant ROM : rom_type := (	
+                                	0	=> YUKLE_A_SBT,
+									1	=> x"0F",
+									2	=> YUKLE_B_SBT,
+									3	=> x"41",
+									4	=> TOPLA_AB,
+									5	=> KAYDET_A,
+									6   => x"80",
+									7   => ATLA,
+									8   => x"00",									
+									others 	=> x"00"
+								);
+								
 							
 
 
